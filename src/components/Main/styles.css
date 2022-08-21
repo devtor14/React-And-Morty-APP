@@ -13,7 +13,7 @@
   top: 0;
   left: 0;
   z-index: -1;
-  
+
   background-color: var(--Blue50);
   opacity: 0;
   visibility: hidden;
@@ -119,8 +119,8 @@
   font-weight: 900;
   color: var(--Blue50);
 }
-.Character-Info-Name:hover{
-  color: var(--Anchor)
+.Character-Info-Name:hover {
+  color: var(--Anchor);
 }
 .Character-Info-Status {
   text-transform: capitalize;
@@ -150,6 +150,54 @@
   font-size: 18px;
   color: var(--Blue50);
 }
-.Character-Info-Anchor:hover{
-  color: var(--Anchor)
+.Character-Info-Anchor:hover {
+  color: var(--Anchor);
+}
+
+@media screen and (max-width: 1439px) {
+  .Characters-List {
+    grid-template-columns: repeat(1, 600px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Characters-List {
+    grid-template-columns: repeat(2, 175px);
+    grid-template-rows: repeat(5, 460px);
+    gap: 1rem;
+  }
+  .Character {
+    width: 175px;
+    height: 460px;
+    flex-direction: column;
+  }
+  .Character img {
+    width: 175px;
+    height: 175px;
+  }
+  .Character-Info {
+    margin: 0 0.5rem;
+    height: 100%;
+  }
+  .Character-Info-Name {
+    font-size: 22px;
+  }
+  .Character-Info-Anchor {
+    font-size: 17px;
+    color: var(--Blue50);
+  }
+}
+@media screen and (max-width: 374px) {
+  .Characters-List {
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(5, 500px);
+  }
+  .Character {
+    width: 300px;
+    height: 500px;
+  }
+  .Character img {
+    width: 300px;
+    height: 300px;
+  }
 }

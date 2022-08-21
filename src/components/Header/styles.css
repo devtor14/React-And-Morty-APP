@@ -101,6 +101,13 @@
   place-self: center;
 }
 .Header-Section h1 {
+  text-align: center;
   font-size: 68px;
   color: var(--Blue50);
+}
+
+@media screen and (max-width: 767px) {
+  .Header-Section h1 {
+    font-size: 38px;
+  }
 }
