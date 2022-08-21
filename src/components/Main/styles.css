@@ -3,6 +3,19 @@
     transform: rotate(360deg);
   }
 }
+@keyframes FavAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 .Loading {
   width: 100%;
@@ -100,11 +113,7 @@
   cursor: pointer;
   transition: all 250ms ease-out;
 }
-.Character button:hover {
-  opacity: 1;
 
-  background-color: rgba(0, 0, 0, 0.5);
-}
 .Character-Info {
   margin: 0 1.5rem;
   padding: 1rem 0;
@@ -154,9 +163,26 @@
   color: var(--Anchor);
 }
 
+@media screen and (min-width: 1440px) {
+  .Character button:hover {
+    opacity: 1;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
 @media screen and (max-width: 1439px) {
   .Characters-List {
     grid-template-columns: repeat(1, 600px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Character button {
+    animation: FavAnimation 4s 4s;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .Character button {
+    animation: FavAnimation infinite 4s;
   }
 }
 
@@ -174,6 +200,11 @@
   .Character img {
     width: 175px;
     height: 175px;
+  }
+  .Character button {
+    width: 175px;
+    height: 175px;
+    padding: 0 .5rem;
   }
   .Character-Info {
     margin: 0 0.5rem;
@@ -199,5 +230,10 @@
   .Character img {
     width: 300px;
     height: 300px;
+  }
+  .Character button {
+    width: 300px;
+    height: 300px;
+    padding: 0 1rem;
   }
 }
