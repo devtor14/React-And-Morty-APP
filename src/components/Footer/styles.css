@@ -1,0 +1,36 @@
+.Footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Footer-Git {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+}
+.Footer-Git a {
+  width: 64px;
+  height: 64px;
+
+  font-size: 64px;
+  color: var(--Anchor);
+}
+
+.Footer-Me {
+  margin: 8px 0;
+}
+.Footer-Me,
+.Footer-Api {
+  color: var(--300);
+  font-size: 22px;
+  font-weight: 600;
+}
+.Footer-Me a,
+.Footer-Api a {
+  margin: 0 6px;
+  color: var(--Anchor);
+}

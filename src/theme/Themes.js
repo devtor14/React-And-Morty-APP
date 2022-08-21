@@ -3,6 +3,7 @@ const darkTheme = `
   --100: #9E9E9E;
   --300: #757575;
   --600: #616161;
+  --Anchor: #fff;
 `;
 
 const setStyleTheme = (styles) => {

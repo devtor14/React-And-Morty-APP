@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
-import Logo from "../../assets/logo.png";
+import { ThemeContext } from "../../context/ThemeContext";
+import { Logo } from "../Logo";
 import "./styles.css";
 
 function Header() {
@@ -11,9 +11,7 @@ function Header() {
     <header className="Header">
       <nav className="Header-Navbar">
         <div className="Header-Navbar-Left">
-          <figure>
-            <img src={Logo} alt="Logo" />
-          </figure>
+          <Logo />
           <span>React Hooks</span>
         </div>
         <button type="button" onClick={() => setTheme(!theme)}>
