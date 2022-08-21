@@ -1,0 +1,106 @@
+.Header {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: var(--300);
+}
+.Header-Navbar {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header-Navbar-Left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.Header-Navbar-Left figure {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  background-color: var(--600);
+  border-radius: 24px;
+}
+.Header-Navbar-Left figure img {
+  width: 60px;
+  height: 60px;
+}
+.Header-Navbar-Left span {
+  color: var(--Blue50);
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 900;
+}
+.Header-Navbar button {
+  width: 120px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+
+  border: none;
+  background-color: var(--600);
+  border-radius: 34px;
+}
+.Button-Text {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  position: absolute;
+
+  transition: all 250ms ease-in-out;
+}
+.Text {
+  transition: all 250ms ease-in-out;
+  opacity: 0;
+}
+.Dark-true {
+  opacity: 1;
+}
+.Light-false {
+  opacity: 1;
+}
+
+.Button-Figure {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  position: relative;
+
+  background-color: var(--white);
+  color: var(--600);
+  border-radius: 100%;
+  font-size: 34px;
+  transition: all 500ms ease-in-out;
+}
+.Figure-true {
+  transform: translateX(60px);
+}
+.Figure {
+  position: absolute;
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+.Moon-true {
+  opacity: 1;
+}
+.Sun-false {
+  opacity: 1;
+}
+
+.Header-Section {
+  place-self: center;
+}
+.Header-Section h1 {
+  font-size: 68px;
+  color: var(--Blue50);
+}

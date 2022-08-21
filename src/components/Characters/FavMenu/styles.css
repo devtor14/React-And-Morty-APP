@@ -1,0 +1,90 @@
+@keyframes ShowMenu {
+  from {
+    opacity: 0;
+    right: -200px;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+.Characters-Favs {
+  box-sizing: content-box;
+  width: 240px;
+  height: 680px;
+  display: grid;
+  align-items: center;
+  grid-template-rows: .8fr 1fr;
+  position: fixed;
+  top: 50%;
+  bottom: 50%;
+  margin: auto 0;
+  z-index: 2;
+
+  background-color: var(--300);
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .25);
+  border-radius: 14px 0 0 14px;
+  transition: all 250ms ease-in-out;
+}
+.Characters-Fav-Title{
+  text-align: center;
+  color: var(--Blue50);
+  font-size: 28px;
+}
+.Open-true {
+  opacity: 1;
+  right: 0;
+}
+.Open-false {
+  opacity: 0;
+  right: -240px;
+}
+.Characters-Favs-List {
+  display: grid;
+  height: auto;
+  justify-content: center;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: repeat(5, 100px);
+  gap: .8rem;
+}
+
+.Character-Fav-Item {
+  text-align: center;
+  z-index: 1;
+}
+.Character-Fav-Item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+}
+.Character-Fav-Item h2 {
+  font-size: 14px;
+}
+.Fav-Menu-Button{
+  width: 64px;
+  height: 64px;
+  margin: auto 0;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -32px;
+  z-index: 1;
+
+  color: var(--Blue50);
+  font-size: 40px;
+  
+  background-color: var(--600);
+  border-radius: 12px 0 0 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+.Button-false:hover{
+  right: -1px;
+}
+.Button-true{
+  right: 230px;
+}

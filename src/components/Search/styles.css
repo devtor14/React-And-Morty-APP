@@ -1,0 +1,23 @@
+.Characters-Search{
+    width: 550px;
+    height: 60px;
+    margin-bottom: 30px;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--Blue50);
+    
+    background-color: var(--600);
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    transition: all 500ms ease-in-out;
+}
+.Characters-Search:focus{
+    width: 600px;
+    box-shadow: 0 0 12px 2px var(--100);
+}
+.Characters-Search::placeholder{
+    color: var(--Blue50);
+}
